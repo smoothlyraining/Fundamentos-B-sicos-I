@@ -1,0 +1,22 @@
+<script>
+    function maxMinAvg(array){
+        z = []
+        temp = array[array.length-1]
+        temp1 = array[array.length-1]
+        sum = 0
+        for(var i=array.length-1; i>=0; i--){
+            if(array[i]>temp){
+                temp=array[i]
+            }
+            if(array[i]<temp1){
+                temp1=array[i]
+            }
+            sum = sum + array[i]
+        }
+        z.push(temp)
+        z.push(temp1)
+        z.push(sum/array.length)
+        return(z)
+    }
+    console.log(maxMinAvg([1,5,10,-2])) // devolverá [10,-2,3.5]
+    </script>

@@ -1,0 +1,11 @@
+<script>
+    function negativos(array){
+        for(var i=array.length-1; i>=0; i--){
+            if(array[i]<0){
+                array[i]=0
+            }
+        }
+        return(array)
+    }
+    console.log(negativos([1,5,10,-2])) // se convertirá en [1,5,10,0]
+    </script>

@@ -1,0 +1,9 @@
+<script>
+    function intercambiaValores(array){
+        temp = array[array.length-1]
+        array[array.length-1]=array[0]
+        array[0]=temp
+        return array
+    }
+    console.log(intercambiaValores([1,5,10,-2])) // será [-2,5,10,1]
+    </script>   
